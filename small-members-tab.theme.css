@@ -1,34 +1,47 @@
-//META{"name":"Small-members-tab","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design","version":"1.5.0"}*//{}
+//META{"name":"Small-Members-Tab-Fixed","description":"Make the members tab smaller. (It gets full size when you hover it).","author":"Munkaylol","version":"1.5.0"}*//{}
 
-/*-------------------made by Beard Design-------------------------*/
-.members-1998pB {
+/*-------------------Fixed By: Munkaylol. Originally Made By Beard Design.-------------------------*/
+.container-2o3qEW{
     transform:translateX(0px);
     z-index:999;
     transition: transform 400ms cubic-bezier(.2,0,0,1);
     will-change: transform;
+    margin-left: 0px;
+    max-width: 60px;
 }
-.members-1998pB:hover {
-    transform:translateX(-150px);
+.container-2o3qEW:hover {
+    transform:translateX(-179px);
+}
+.chatContent-3KubbW {
+    max-width: 99%;
+}
+.membersGroup-2eiWxl {
+    margin-left: -10px;
+    font-size: 10px;
+}
+.container-2o3qEW:hover .membersGroup-2eiWxl {
+    margin-left: 2px;
+    font-size: 12px
 }
 .app {
     overflow-x: hidden;
 }
 
-.members-1998pB .member-3W1lQa .activity-1IYsbk,
-.members-1998pB .member-3W1lQa .memberInner-2CPc3V {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0 .container-2o3qEW .activity-1IYsbk,
+.membersWrap-3NUR2t hiddenMembers-8kpYM0 .container-2o3qEW .memberInner-2CPc3V {
     opacity:0;
     transition: transform 100ms ease, opacity 100ms ease;
     
 }
-.members-1998pB:hover .member-3W1lQa .activity-1IYsbk,
-.members-1998pB:hover .member-3W1lQa .memberInner-2CPc3V {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0:hover .container-2o3qEW .activity-1IYsbk,
+.membersWrap-3NUR2t hiddenMembers-8kpYM0:hover .container-2o3qEW .memberInner-2CPc3V {
     opacity:1;
 }
 .header-toolbar button.active{
     display:none;
 }
 
-.members-1998pB .membersGroup-v9BXpm {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0 .membersGroup-v9BXpm {
     transform:translateX(-50%)scale(0.7);
     transition: 400ms cubic-bezier(.2,0,0,1), max-width 1ms;
     width:auto;
@@ -46,16 +59,16 @@
     padding-left:0;
     padding-right: 0;
 }
-.members-1998pB:hover .membersGroup-v9BXpm {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0:hover .membersGroup-v9BXpm {
     transform:translateX(-15px) scale(1);
     max-width: 180px;
 }
 
-.members-1998pB .avatar-16XVId {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0 .avatar-16XVId {
     transition: transform 400ms ease;
     transform:translateX(15px)scale(1.2);
 }
-.members-1998pB:hover .avatar-16XVId {
+.membersWrap-3NUR2t hiddenMembers-8kpYM0:hover .avatar-16XVId {
     transform:translateX(0)scale(1);
 }
 
@@ -68,4 +81,4 @@
     width:90px!important
 }
 
-/*-------------------made by Beard Design-------------------------*/
+/*-------------------Fixed By: Munkaylol. Originally Made By Beard Design.-------------------------*/
